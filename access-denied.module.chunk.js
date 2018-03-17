@@ -1,13 +1,13 @@
 webpackJsonp(["access-denied.module"],{
 
-/***/ "../../../../../src/app/access-denied/access-denied-routing.module.ts":
+/***/ "./src/app/access-denied/access-denied-routing.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccessDeniedRoutingModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__access_denied_component__ = __webpack_require__("../../../../../src/app/access-denied/access-denied.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__access_denied_component__ = __webpack_require__("./src/app/access-denied/access-denied.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,37 +38,26 @@ var AccessDeniedRoutingModule = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/access-denied/access-denied.component.html":
+/***/ "./src/app/access-denied/access-denied.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<p>\n  access-denied works!\n</p>\n"
 
 /***/ }),
 
-/***/ "../../../../../src/app/access-denied/access-denied.component.scss":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./src/app/access-denied/access-denied.component.scss":
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+module.exports = ""
 
 /***/ }),
 
-/***/ "../../../../../src/app/access-denied/access-denied.component.ts":
+/***/ "./src/app/access-denied/access-denied.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccessDeniedComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -87,8 +76,8 @@ var AccessDeniedComponent = (function () {
     AccessDeniedComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-access-denied',
-            template: __webpack_require__("../../../../../src/app/access-denied/access-denied.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/access-denied/access-denied.component.scss")]
+            template: __webpack_require__("./src/app/access-denied/access-denied.component.html"),
+            styles: [__webpack_require__("./src/app/access-denied/access-denied.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], AccessDeniedComponent);
@@ -99,16 +88,16 @@ var AccessDeniedComponent = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/access-denied/access-denied.module.ts":
+/***/ "./src/app/access-denied/access-denied.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccessDeniedModule", function() { return AccessDeniedModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__access_denied_routing_module__ = __webpack_require__("../../../../../src/app/access-denied/access-denied-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__access_denied_component__ = __webpack_require__("../../../../../src/app/access-denied/access-denied.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__access_denied_routing_module__ = __webpack_require__("./src/app/access-denied/access-denied-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__access_denied_component__ = __webpack_require__("./src/app/access-denied/access-denied.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
