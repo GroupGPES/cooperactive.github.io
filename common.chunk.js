@@ -8354,6 +8354,14 @@ var NgbPanel = (function () {
            */
         this.isOpen = false;
     }
+    NgbPanel.prototype.ngAfterContentChecked = function () {
+        // We are using @ContentChildren instead of @ContantChild as in the Angular version being used
+        // only @ContentChildren allows us to specify the {descendants: false} option.
+        // Without {descendants: false} we are hitting bugs described in:
+        // https://github.com/ng-bootstrap/ng-bootstrap/issues/2240
+        this.titleTpl = this.titleTpls.first;
+        this.contentTpl = this.contentTpls.first;
+    };
     NgbPanel.decorators = [
         { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: 'ngb-panel' },] },
     ];
@@ -8364,8 +8372,8 @@ var NgbPanel = (function () {
         "id": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
         "title": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
         "type": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-        "contentTpl": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChild"], args: [NgbPanelContent,] },],
-        "titleTpl": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChild"], args: [NgbPanelTitle,] },],
+        "titleTpls": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChildren"], args: [NgbPanelTitle, { descendants: false },] },],
+        "contentTpls": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChildren"], args: [NgbPanelContent, { descendants: false },] },],
     };
     return NgbPanel;
 }());
@@ -13525,6 +13533,14 @@ var NgbTab = (function () {
            */
         this.disabled = false;
     }
+    NgbTab.prototype.ngAfterContentChecked = function () {
+        // We are using @ContentChildren instead of @ContantChild as in the Angular version being used
+        // only @ContentChildren allows us to specify the {descendants: false} option.
+        // Without {descendants: false} we are hitting bugs described in:
+        // https://github.com/ng-bootstrap/ng-bootstrap/issues/2240
+        this.titleTpl = this.titleTpls.first;
+        this.contentTpl = this.contentTpls.first;
+    };
     NgbTab.decorators = [
         { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: 'ngb-tab' },] },
     ];
@@ -13534,8 +13550,8 @@ var NgbTab = (function () {
         "id": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
         "title": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
         "disabled": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-        "contentTpl": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChild"], args: [NgbTabContent,] },],
-        "titleTpl": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChild"], args: [NgbTabTitle,] },],
+        "titleTpls": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChildren"], args: [NgbTabTitle, { descendants: false },] },],
+        "contentTpls": [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChildren"], args: [NgbTabContent, { descendants: false },] },],
     };
     return NgbTab;
 }());

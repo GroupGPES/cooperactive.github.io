@@ -8,10 +8,6 @@ var map = {
 		"./src/app/access-denied/access-denied.module.ts",
 		"access-denied.module"
 	],
-	"./blank-page/blank-page.module": [
-		"./src/app/layout/blank-page/blank-page.module.ts",
-		"blank-page.module"
-	],
 	"./bs-component/bs-component.module": [
 		"./src/app/layout/bs-component/bs-component.module.ts",
 		"common",
@@ -27,20 +23,25 @@ var map = {
 		"charts.module",
 		"common"
 	],
-	"./dashboard/dashboard.module": [
-		"./src/app/layout/dashboard/dashboard.module.ts",
+	"./dashboard-inicio/dashboard-inicio.module": [
+		"./src/app/layout/dashboard-inicio/dashboard-inicio.module.ts",
 		"common",
-		"dashboard.module"
+		"dashboard-inicio.module"
 	],
-	"./form/form.module": [
-		"./src/app/layout/form/form.module.ts",
+	"./doacao-efetuar/doacao-efetuar.module": [
+		"./src/app/layout/doacao-efetuar/doacao-efetuar.module.ts",
 		"common",
-		"form.module"
+		"doacao-efetuar.module"
 	],
-	"./grid/grid.module": [
-		"./src/app/layout/grid/grid.module.ts",
+	"./doadores-cadastrar/doadores-cadastrar.module": [
+		"./src/app/layout/doadores-cadastrar/doadores-cadastrar.module.ts",
 		"common",
-		"grid.module"
+		"doadores-cadastrar.module"
+	],
+	"./doadores-consultar/doadores-consultar.module": [
+		"./src/app/layout/doadores-consultar/doadores-consultar.module.ts",
+		"common",
+		"doadores-consultar.module"
 	],
 	"./layout/layout.module": [
 		"./src/app/layout/layout.module.ts",
@@ -56,6 +57,11 @@ var map = {
 		"./src/app/not-found/not-found.module.ts",
 		"not-found.module"
 	],
+	"./realizar-ligacoes/realizar-ligacoes.module": [
+		"./src/app/layout/realizar-ligacoes/realizar-ligacoes.module.ts",
+		"common",
+		"realizar-ligacoes.module"
+	],
 	"./server-error/server-error.module": [
 		"./src/app/server-error/server-error.module.ts",
 		"server-error.module"
@@ -64,11 +70,6 @@ var map = {
 		"./src/app/signup/signup.module.ts",
 		"common",
 		"signup.module"
-	],
-	"./tables/tables.module": [
-		"./src/app/layout/tables/tables.module.ts",
-		"common",
-		"tables.module"
 	],
 	"./updateDoadores/formUpdate.module": [
 		"./src/app/layout/updateDoadores/formUpdate.module.ts",
@@ -137,7 +138,7 @@ var AppRoutingModule = (function () {
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>\n"
+module.exports = "<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -341,7 +342,7 @@ var AuthGuard = (function () {
 /***/ "./src/app/shared/modules/page-header/page-header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n    <div class=\"col-xl-12\">\n        <h2 class=\"page-header\">\n            {{heading}}\n        </h2>\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">\n                <i class=\"fa fa-dashboard\"></i> <a href=\"Javascript:void(0)\" [routerLink]=\"['/dashboard']\">Dashboard</a>\n            </li>\n            <li class=\"breadcrumb-item active\"><i class=\"fa {{icon}}\"></i> {{heading}}</li>\n        </ol>\n    </div>\n</div>\n"
+module.exports = "<div class=\"row\">\n    <div class=\"col-xl-12\">\n        <h2 class=\"page-header\">\n            {{heading}}\n        </h2>\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">\n                <i class=\"fa fa-home\"></i> <a href=\"Javascript:void(0)\" [routerLink]=\"['/dashboard-inicio']\">Início</a>\n            </li>\n            <li class=\"breadcrumb-item active\"><i class=\"fa {{icon}}\"></i> {{heading}}</li>\n        </ol>\n    </div>\n</div>\n"
 
 /***/ }),
 

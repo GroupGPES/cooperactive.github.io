@@ -86,25 +86,25 @@ var HeaderComponent = (function () {
 
 /***/ }),
 
-/***/ "./src/app/layout/components/sidebar/sidebar.component.html":
+/***/ "./src/app/layout/components/menu-lateral/menu-lateral.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"sidebar\" [ngClass]=\"{sidebarPushRight: isActive}\">\n    <ul class=\"list-group\">\n        <!-- <a routerLink=\"/dashboard\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-dashboard\"></i>&nbsp;{{ 'Doadores' | translate }}\n        </a> -->\n        <img src=\"assets/images/logo-3.png\" width=\"150px\" style=\"margin: 0 auto 30px;\" />\n        \n        \n        \n        <a [routerLink]=\"['/dashboard']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-home\"></i>&nbsp;{{ 'Início' | translate }}\n        </a>\n\n\n\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('donatorsPage')\">\n                <span><i class=\"fa fa-fw fa-user\"></i>&nbsp; {{ 'Doadores' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'donatorsPage'\">\n                <ul class=\"submenu\">\n                    <li><a [routerLink]=\"['/forms']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-pencil\"></i>&nbsp;{{ 'Cadastrar' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/grid']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-table\"></i>&nbsp;{{ 'Consultar' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/updateDoadores']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Alterar' | translate }}</span></a></li>\n                </ul>\n            </li>\n        </div>\n        <!-- <a [routerLink]=\"['/charts']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-bar-chart-o\"></i>&nbsp;{{ 'Doações' | translate }}\n        </a> -->\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('donationsPage')\">\n                <span><i class=\"fa fa-fw fa-usd\"></i>&nbsp; {{ 'Doações' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'donationsPage'\">\n                <ul class=\"submenu\">\n                    <li><a [routerLink]=\"['/blank-page']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-pencil\"></i>&nbsp;{{ 'Efetuar' | translate}}</span></a></li>\n                    <li><a [routerLink]=\"['/components']\" [routerLinkActive]=\"['router-link-active']\" ><span><i class=\"fa fa-fw fa-table\"></i>&nbsp;{{ 'Consultar' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/blank-page']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Alterar' | translate }}</span></a></li>\n                </ul>\n            </li>\n        </div>\n\n\n        <a [routerLink]=\"['/tables']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-phone\"></i>&nbsp;{{ 'Realizar Ligações' | translate }}\n        </a>\n\n\n        <!-- <a [routerLink]=\"['/forms']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Gerenciar Cidades' | translate }}\n        </a>\n        <a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-desktop\"></i>&nbsp;{{ 'Bootstrap Element' | translate }}\n        </a>\n        <a [routerLink]=\"['/grid']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-wrench\"></i>&nbsp;{{ 'Bootstrap Grid' | translate }}\n        </a>\n         -->\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('pages')\">\n                <span><i class=\"fa fa-plus\"></i>&nbsp; {{ 'Gerenciar' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'pages'\">\n                <ul class=\"submenu\">\n                    <li><a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\"><span>{{ 'Gerador de Telefones' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\"><span>{{ 'Cidades' | translate }}</span></a></li>\n                   \n                    <!-- <li>\n                        <a href=\"javascript:void(0)\"><span>{{ 'Scripts' | translate }}</span></a>\n                    </li> -->\n                </ul>\n            </li>\n        </div>\n\n        \n        <!-- <a [routerLink]=\"['/blank-page']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-file-o\"></i>&nbsp;{{ 'Logout' | translate }}\n        </a> -->\n        <!-- <a class=\"list-group-item more-themes\" href=\"http://www.strapui.com/\" >\n            {{ 'More Theme' | translate }}\n        </a> -->\n    </ul>\n</nav>\n"
+module.exports = "<nav class=\"sidebar\" [ngClass]=\"{MenuLateralPushRight: isActive}\">\n    <ul class=\"list-group\">\n        <!-- <a routerLink=\"/dashboard\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-dashboard\"></i>&nbsp;{{ 'Doadores' | translate }}\n        </a> -->\n        <img src=\"assets/images/logo-3.png\" width=\"150px\" style=\"margin: 0 auto 30px;\" />\n\n\n\n        <a [routerLink]=\"['/dashboard-inicio']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-home\"></i>&nbsp;{{ 'Início' | translate }}\n        </a>\n\n\n\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('donatorsPage')\">\n                <span><i class=\"fa fa-fw fa-user\"></i>&nbsp; {{ 'Doadores' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'donatorsPage'\">\n                <ul class=\"submenu\">\n                    <li><a [routerLink]=\"['/doadores-cadastrar']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-pencil\"></i>&nbsp;{{ 'Cadastrar' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/doadores-consultar']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-table\"></i>&nbsp;{{ 'Consultar' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/updateDoadores']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Alterar' | translate }}</span></a></li>\n                </ul>\n            </li>\n        </div>\n        <!-- <a [routerLink]=\"['/charts']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-bar-chart-o\"></i>&nbsp;{{ 'Doações' | translate }}\n        </a> -->\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('donationsPage')\">\n                <span><i class=\"fa fa-fw fa-usd\"></i>&nbsp; {{ 'Doações' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'donationsPage'\">\n                <ul class=\"submenu\">\n                    <li><a [routerLink]=\"['/doacao-efetuar']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-pencil\"></i>&nbsp;{{ 'Efetuar' | translate}}</span></a></li>\n                    <li><a [routerLink]=\"['/components']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-table\"></i>&nbsp;{{ 'Consultar' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/doacao-alterar']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Alterar' | translate }}</span></a></li>\n                </ul>\n            </li>\n        </div>\n\n\n            <a [routerLink]=\"['/realizar-ligacoes']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-phone\"></i>&nbsp;{{ 'Realizar Ligações' | translate }}\n        </a>\n\n\n        <!-- <a [routerLink]=\"['/forms']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Gerenciar Cidades' | translate }}\n        </a>\n        <a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-desktop\"></i>&nbsp;{{ 'Bootstrap Element' | translate }}\n        </a>\n        <a [routerLink]=\"['/grid']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-wrench\"></i>&nbsp;{{ 'Bootstrap Grid' | translate }}\n        </a>\n         -->\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('pages')\">\n                <span><i class=\"fa fa-plus\"></i>&nbsp; {{ 'Gerenciar' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'pages'\">\n                <ul class=\"submenu\">\n                    <li><a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\"><span>{{ 'Gerador de Telefones' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\"><span>{{ 'Cidades' | translate }}</span></a></li>\n\n                    <!-- <li>\n                        <a href=\"javascript:void(0)\"><span>{{ 'Scripts' | translate }}</span></a>\n                    </li> -->\n                </ul>\n            </li>\n        </div>\n\n\n        <!-- <a [routerLink]=\"['/blank-page']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-file-o\"></i>&nbsp;{{ 'Logout' | translate }}\n        </a> -->\n        <!-- <a class=\"list-group-item more-themes\" href=\"http://www.strapui.com/\" >\n            {{ 'More Theme' | translate }}\n        </a> -->\n    </ul>\n</nav>"
 
 /***/ }),
 
-/***/ "./src/app/layout/components/sidebar/sidebar.component.scss":
+/***/ "./src/app/layout/components/menu-lateral/menu-lateral.component.scss":
 /***/ (function(module, exports) {
 
 module.exports = ".sidebar {\n  border-radius: 0;\n  position: fixed;\n  z-index: 9000;\n  top: 20px;\n  left: 235px;\n  width: 235px;\n  margin-left: -235px;\n  border: none;\n  border-radius: 0;\n  overflow-y: auto;\n  background-color: #222;\n  bottom: 0;\n  overflow-x: hidden;\n  padding-bottom: 40px;\n  -webkit-transition: all 0.2s ease-in-out;\n  transition: all 0.2s ease-in-out; }\n  .sidebar .list-group a.list-group-item {\n    background: #222;\n    border: 0;\n    border-radius: 0;\n    color: #999;\n    text-decoration: none; }\n  .sidebar .list-group a.list-group-item .fa {\n      margin-right: 10px; }\n  .sidebar .list-group a:hover {\n    background: #151515;\n    color: #fff; }\n  .sidebar .list-group a.router-link-active {\n    background: #151515;\n    color: #fff; }\n  .sidebar .sidebar-dropdown *:focus {\n    border-radius: none;\n    border: none; }\n  .sidebar .sidebar-dropdown .panel-title {\n    font-size: 1rem;\n    height: 50px;\n    margin-bottom: 0; }\n  .sidebar .sidebar-dropdown .panel-title a {\n      color: #999;\n      text-decoration: none;\n      font-weight: 400;\n      background: #222; }\n  .sidebar .sidebar-dropdown .panel-title a span {\n        position: relative;\n        display: block;\n        padding: 0.75rem 1.5rem;\n        padding-top: 1rem; }\n  .sidebar .sidebar-dropdown .panel-title a:hover,\n    .sidebar .sidebar-dropdown .panel-title a:focus {\n      color: #fff;\n      outline: none;\n      outline-offset: -2px; }\n  .sidebar .sidebar-dropdown .panel-title:hover {\n    background: #151515; }\n  .sidebar .sidebar-dropdown .panel-collapse {\n    border-radious: 0;\n    border: none; }\n  .sidebar .sidebar-dropdown .panel-collapse .panel-body .list-group-item {\n      border-radius: 0;\n      background-color: #222;\n      border: 0 solid transparent; }\n  .sidebar .sidebar-dropdown .panel-collapse .panel-body .list-group-item a {\n        color: #999; }\n  .sidebar .sidebar-dropdown .panel-collapse .panel-body .list-group-item a:hover {\n        color: #fff; }\n  .sidebar .sidebar-dropdown .panel-collapse .panel-body .list-group-item:hover {\n      background: #151515; }\n  .nested-menu .list-group-item {\n  cursor: pointer; }\n  .nested-menu .nested {\n  list-style-type: none; }\n  .nested-menu ul.submenu {\n  display: none;\n  height: 0; }\n  .nested-menu .expand ul.submenu {\n  display: block;\n  list-style-type: none;\n  height: auto; }\n  .nested-menu .expand ul.submenu li a {\n    color: #fff;\n    padding: 10px;\n    display: block; }\n  @media screen and (max-width: 992px) {\n  .sidebar {\n    top: 45px;\n    left: 0px; } }\n  ::-webkit-scrollbar {\n  width: 8px; }\n  ::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 0px white;\n  border-radius: 3px; }\n  ::-webkit-scrollbar-thumb {\n  border-radius: 3px;\n  -webkit-box-shadow: inset 0 0 3px white; }\n"
 
 /***/ }),
 
-/***/ "./src/app/layout/components/sidebar/sidebar.component.ts":
+/***/ "./src/app/layout/components/menu-lateral/menu-lateral.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SidebarComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuLateralComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -113,15 +113,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
-var SidebarComponent = (function () {
-    function SidebarComponent() {
+var MenuLateralComponent = (function () {
+    function MenuLateralComponent() {
         this.isActive = false;
         this.showMenu = '';
     }
-    SidebarComponent.prototype.eventCalled = function () {
+    MenuLateralComponent.prototype.eventCalled = function () {
         this.isActive = !this.isActive;
     };
-    SidebarComponent.prototype.addExpandClass = function (element) {
+    MenuLateralComponent.prototype.addExpandClass = function (element) {
         if (element === this.showMenu) {
             this.showMenu = '0';
         }
@@ -129,14 +129,64 @@ var SidebarComponent = (function () {
             this.showMenu = element;
         }
     };
-    SidebarComponent = __decorate([
+    MenuLateralComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-sidebar',
-            template: __webpack_require__("./src/app/layout/components/sidebar/sidebar.component.html"),
-            styles: [__webpack_require__("./src/app/layout/components/sidebar/sidebar.component.scss")]
+            selector: 'app-menu-lateral',
+            template: __webpack_require__("./src/app/layout/components/menu-lateral/menu-lateral.component.html"),
+            styles: [__webpack_require__("./src/app/layout/components/menu-lateral/menu-lateral.component.scss")]
         })
-    ], SidebarComponent);
-    return SidebarComponent;
+    ], MenuLateralComponent);
+    return MenuLateralComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/layout/doacao-alterar/doacao-alterar.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  doacao-alterar works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/layout/doacao-alterar/doacao-alterar.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/layout/doacao-alterar/doacao-alterar.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DoacaoAlterarComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var DoacaoAlterarComponent = (function () {
+    function DoacaoAlterarComponent() {
+    }
+    DoacaoAlterarComponent.prototype.ngOnInit = function () {
+    };
+    DoacaoAlterarComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-doacao-alterar',
+            template: __webpack_require__("./src/app/layout/doacao-alterar/doacao-alterar.component.html"),
+            styles: [__webpack_require__("./src/app/layout/doacao-alterar/doacao-alterar.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], DoacaoAlterarComponent);
+    return DoacaoAlterarComponent;
 }());
 
 
@@ -165,15 +215,15 @@ var routes = [
         path: '',
         component: __WEBPACK_IMPORTED_MODULE_2__layout_component__["a" /* LayoutComponent */],
         children: [
-            { path: '', redirectTo: 'dashboard' },
-            { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
+            { path: '', redirectTo: 'dashboard-inicio' },
+            { path: 'dashboard-inicio', loadChildren: './dashboard-inicio/dashboard-inicio.module#DashboardInicioModule' },
             { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
-            { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
-            { path: 'forms', loadChildren: './form/form.module#FormModule' },
+            { path: 'realizar-ligacoes', loadChildren: './realizar-ligacoes/realizar-ligacoes.module#LigacoesModule' },
+            { path: 'doadores-cadastrar', loadChildren: './doadores-cadastrar/doadores-cadastrar.module#DoadoresCadastrarModule' },
             { path: 'bs-element', loadChildren: './bs-element/bs-element.module#BsElementModule' },
-            { path: 'grid', loadChildren: './grid/grid.module#GridModule' },
+            { path: 'doadores-consultar', loadChildren: './doadores-consultar/doadores-consultar.module#DoadoresConsultarModule' },
             { path: 'components', loadChildren: './bs-component/bs-component.module#BsComponentModule' },
-            { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' },
+            { path: 'doacao-efetuar', loadChildren: './doacao-efetuar/doacao-efetuar.module#DoacaoEfetuarModule' },
             { path: 'updateDoadores', loadChildren: './updateDoadores/formUpdate.module#FormModuleUpdate' }
         ]
     }
@@ -197,7 +247,7 @@ var LayoutRoutingModule = (function () {
 /***/ "./src/app/layout/layout.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-header></app-header>\n<app-sidebar></app-sidebar>\n<section class=\"main-container\">\n    <router-outlet></router-outlet>\n</section>\n"
+module.exports = "<app-header></app-header>\n<app-menu-lateral></app-menu-lateral>\n<section class=\"main-container\">\n    <router-outlet></router-outlet>\n</section>"
 
 /***/ }),
 
@@ -255,14 +305,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__ = __webpack_require__("./node_modules/@ng-bootstrap/ng-bootstrap/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__layout_routing_module__ = __webpack_require__("./src/app/layout/layout-routing.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__layout_component__ = __webpack_require__("./src/app/layout/layout.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_sidebar_sidebar_component__ = __webpack_require__("./src/app/layout/components/sidebar/sidebar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_menu_lateral_menu_lateral_component__ = __webpack_require__("./src/app/layout/components/menu-lateral/menu-lateral.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_header_header_component__ = __webpack_require__("./src/app/layout/components/header/header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__doacao_alterar_doacao_alterar_component__ = __webpack_require__("./src/app/layout/doacao-alterar/doacao-alterar.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -282,7 +334,7 @@ var LayoutModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */],
                 __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__["d" /* NgbDropdownModule */].forRoot()
             ],
-            declarations: [__WEBPACK_IMPORTED_MODULE_5__layout_component__["a" /* LayoutComponent */], __WEBPACK_IMPORTED_MODULE_6__components_sidebar_sidebar_component__["a" /* SidebarComponent */], __WEBPACK_IMPORTED_MODULE_7__components_header_header_component__["a" /* HeaderComponent */]]
+            declarations: [__WEBPACK_IMPORTED_MODULE_5__layout_component__["a" /* LayoutComponent */], __WEBPACK_IMPORTED_MODULE_6__components_menu_lateral_menu_lateral_component__["a" /* MenuLateralComponent */], __WEBPACK_IMPORTED_MODULE_7__components_header_header_component__["a" /* HeaderComponent */], __WEBPACK_IMPORTED_MODULE_8__doacao_alterar_doacao_alterar_component__["a" /* DoacaoAlterarComponent */]]
         })
     ], LayoutModule);
     return LayoutModule;

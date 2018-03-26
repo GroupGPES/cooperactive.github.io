@@ -42,7 +42,7 @@ var BsComponentRoutingModule = (function () {
 /***/ "./src/app/layout/bs-component/bs-component.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n    <app-page-header [heading]=\"'Bootstrap Component'\" [icon]=\"'fa-th-list'\"></app-page-header>\n    <app-modal></app-modal>\n    <app-alert></app-alert>\n    <app-buttons></app-buttons>\n    <app-collapse></app-collapse>\n    <app-date-picker></app-date-picker>\n    <app-dropdown></app-dropdown>\n    <app-pagination></app-pagination>\n    <app-pop-over></app-pop-over>\n    <app-progressbar></app-progressbar>\n    <app-tabs></app-tabs>\n    <app-tooltip></app-tooltip>\n    <app-timepicker></app-timepicker>\n    <app-rating></app-rating>\n</div>\n"
+module.exports = "<div>\n    <app-page-header [heading]=\"'Consultar Doações'\" [icon]=\"'fa-table'\"></app-page-header>\n</div>"
 
 /***/ }),
 
