@@ -8,11 +8,6 @@ var map = {
 		"./src/app/access-denied/access-denied.module.ts",
 		"access-denied.module"
 	],
-	"./bs-component/bs-component.module": [
-		"./src/app/layout/bs-component/bs-component.module.ts",
-		"common",
-		"bs-component.module"
-	],
 	"./bs-element/bs-element.module": [
 		"./src/app/layout/bs-element/bs-element.module.ts",
 		"common",
@@ -27,6 +22,16 @@ var map = {
 		"./src/app/layout/dashboard-inicio/dashboard-inicio.module.ts",
 		"common",
 		"dashboard-inicio.module"
+	],
+	"./doacao-alterar/doacao-alterar.module": [
+		"./src/app/layout/doacao-alterar/doacao-alterar.module.ts",
+		"common",
+		"doacao-alterar.module"
+	],
+	"./doacao-consultar/doacao-consultar.module": [
+		"./src/app/layout/doacao-consultar/doacao-consultar.module.ts",
+		"common",
+		"doacao-consultar.module"
 	],
 	"./doacao-efetuar/doacao-efetuar.module": [
 		"./src/app/layout/doacao-efetuar/doacao-efetuar.module.ts",

@@ -89,7 +89,7 @@ var HeaderComponent = (function () {
 /***/ "./src/app/layout/components/menu-lateral/menu-lateral.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"sidebar\" [ngClass]=\"{MenuLateralPushRight: isActive}\">\n    <ul class=\"list-group\">\n        <!-- <a routerLink=\"/dashboard\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-dashboard\"></i>&nbsp;{{ 'Doadores' | translate }}\n        </a> -->\n        <img src=\"assets/images/logo-3.png\" width=\"150px\" style=\"margin: 0 auto 30px;\" />\n\n\n\n        <a [routerLink]=\"['/dashboard-inicio']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-home\"></i>&nbsp;{{ 'Início' | translate }}\n        </a>\n\n\n\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('donatorsPage')\">\n                <span><i class=\"fa fa-fw fa-user\"></i>&nbsp; {{ 'Doadores' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'donatorsPage'\">\n                <ul class=\"submenu\">\n                    <li><a [routerLink]=\"['/doadores-cadastrar']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-pencil\"></i>&nbsp;{{ 'Cadastrar' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/doadores-consultar']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-table\"></i>&nbsp;{{ 'Consultar' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/updateDoadores']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Alterar' | translate }}</span></a></li>\n                </ul>\n            </li>\n        </div>\n        <!-- <a [routerLink]=\"['/charts']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-bar-chart-o\"></i>&nbsp;{{ 'Doações' | translate }}\n        </a> -->\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('donationsPage')\">\n                <span><i class=\"fa fa-fw fa-usd\"></i>&nbsp; {{ 'Doações' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'donationsPage'\">\n                <ul class=\"submenu\">\n                    <li><a [routerLink]=\"['/doacao-efetuar']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-pencil\"></i>&nbsp;{{ 'Efetuar' | translate}}</span></a></li>\n                    <li><a [routerLink]=\"['/components']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-table\"></i>&nbsp;{{ 'Consultar' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/doacao-alterar']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Alterar' | translate }}</span></a></li>\n                </ul>\n            </li>\n        </div>\n\n\n            <a [routerLink]=\"['/realizar-ligacoes']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-phone\"></i>&nbsp;{{ 'Realizar Ligações' | translate }}\n        </a>\n\n\n        <!-- <a [routerLink]=\"['/forms']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Gerenciar Cidades' | translate }}\n        </a>\n        <a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-desktop\"></i>&nbsp;{{ 'Bootstrap Element' | translate }}\n        </a>\n        <a [routerLink]=\"['/grid']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-wrench\"></i>&nbsp;{{ 'Bootstrap Grid' | translate }}\n        </a>\n         -->\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('pages')\">\n                <span><i class=\"fa fa-plus\"></i>&nbsp; {{ 'Gerenciar' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'pages'\">\n                <ul class=\"submenu\">\n                    <li><a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\"><span>{{ 'Gerador de Telefones' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\"><span>{{ 'Cidades' | translate }}</span></a></li>\n\n                    <!-- <li>\n                        <a href=\"javascript:void(0)\"><span>{{ 'Scripts' | translate }}</span></a>\n                    </li> -->\n                </ul>\n            </li>\n        </div>\n\n\n        <!-- <a [routerLink]=\"['/blank-page']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-file-o\"></i>&nbsp;{{ 'Logout' | translate }}\n        </a> -->\n        <!-- <a class=\"list-group-item more-themes\" href=\"http://www.strapui.com/\" >\n            {{ 'More Theme' | translate }}\n        </a> -->\n    </ul>\n</nav>"
+module.exports = "<nav class=\"sidebar\" [ngClass]=\"{MenuLateralPushRight: isActive}\">\n    <ul class=\"list-group\">\n        <!-- <a routerLink=\"/dashboard\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-dashboard\"></i>&nbsp;{{ 'Doadores' | translate }}\n        </a> -->\n        <img src=\"assets/images/logo-3.png\" width=\"150px\" style=\"margin: 0 auto 30px;\" />\n\n\n\n        <a [routerLink]=\"['/dashboard-inicio']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-home\"></i>&nbsp;{{ 'Início' | translate }}\n        </a>\n\n\n\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('donatorsPage')\">\n                <span><i class=\"fa fa-fw fa-user\"></i>&nbsp; {{ 'Doadores' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'donatorsPage'\">\n                <ul class=\"submenu\">\n                    <li><a [routerLink]=\"['/doadores-cadastrar']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-pencil\"></i>&nbsp;{{ 'Cadastrar' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/doadores-consultar']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-table\"></i>&nbsp;{{ 'Consultar' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/updateDoadores']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Alterar' | translate }}</span></a></li>\n                </ul>\n            </li>\n        </div>\n        <!-- <a [routerLink]=\"['/charts']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-bar-chart-o\"></i>&nbsp;{{ 'Doações' | translate }}\n        </a> -->\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('donationsPage')\">\n                <span><i class=\"fa fa-fw fa-usd\"></i>&nbsp; {{ 'Doações' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'donationsPage'\">\n                <ul class=\"submenu\">\n                    <li><a [routerLink]=\"['/doacao-efetuar']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-pencil\"></i>&nbsp;{{ 'Efetuar' | translate}}</span></a></li>\n                    <li><a [routerLink]=\"['/doacao-consultar']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-table\"></i>&nbsp;{{ 'Consultar' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/doacao-alterar']\" [routerLinkActive]=\"['router-link-active']\"><span><i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Alterar' | translate }}</span></a></li>\n                </ul>\n            </li>\n        </div>\n\n\n            <a [routerLink]=\"['/realizar-ligacoes']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-phone\"></i>&nbsp;{{ 'Realizar Ligações' | translate }}\n        </a>\n\n\n        <!-- <a [routerLink]=\"['/forms']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Gerenciar Cidades' | translate }}\n        </a>\n        <a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-desktop\"></i>&nbsp;{{ 'Bootstrap Element' | translate }}\n        </a>\n        <a [routerLink]=\"['/grid']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-wrench\"></i>&nbsp;{{ 'Bootstrap Grid' | translate }}\n        </a>\n         -->\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('pages')\">\n                <span><i class=\"fa fa-plus\"></i>&nbsp; {{ 'Gerenciar' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'pages'\">\n                <ul class=\"submenu\">\n                    <li><a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\"><span>{{ 'Gerador de Telefones' | translate }}</span></a></li>\n                    <li><a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\"><span>{{ 'Cidades' | translate }}</span></a></li>\n\n                    <!-- <li>\n                        <a href=\"javascript:void(0)\"><span>{{ 'Scripts' | translate }}</span></a>\n                    </li> -->\n                </ul>\n            </li>\n        </div>\n\n\n        <!-- <a [routerLink]=\"['/blank-page']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-file-o\"></i>&nbsp;{{ 'Logout' | translate }}\n        </a> -->\n        <!-- <a class=\"list-group-item more-themes\" href=\"http://www.strapui.com/\" >\n            {{ 'More Theme' | translate }}\n        </a> -->\n    </ul>\n</nav>"
 
 /***/ }),
 
@@ -143,56 +143,6 @@ var MenuLateralComponent = (function () {
 
 /***/ }),
 
-/***/ "./src/app/layout/doacao-alterar/doacao-alterar.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  doacao-alterar works!\n</p>\n"
-
-/***/ }),
-
-/***/ "./src/app/layout/doacao-alterar/doacao-alterar.component.scss":
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/layout/doacao-alterar/doacao-alterar.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DoacaoAlterarComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var DoacaoAlterarComponent = (function () {
-    function DoacaoAlterarComponent() {
-    }
-    DoacaoAlterarComponent.prototype.ngOnInit = function () {
-    };
-    DoacaoAlterarComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-doacao-alterar',
-            template: __webpack_require__("./src/app/layout/doacao-alterar/doacao-alterar.component.html"),
-            styles: [__webpack_require__("./src/app/layout/doacao-alterar/doacao-alterar.component.scss")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], DoacaoAlterarComponent);
-    return DoacaoAlterarComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/layout/layout-routing.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -222,7 +172,8 @@ var routes = [
             { path: 'doadores-cadastrar', loadChildren: './doadores-cadastrar/doadores-cadastrar.module#DoadoresCadastrarModule' },
             { path: 'bs-element', loadChildren: './bs-element/bs-element.module#BsElementModule' },
             { path: 'doadores-consultar', loadChildren: './doadores-consultar/doadores-consultar.module#DoadoresConsultarModule' },
-            { path: 'components', loadChildren: './bs-component/bs-component.module#BsComponentModule' },
+            { path: 'doacao-alterar', loadChildren: './doacao-alterar/doacao-alterar.module#DoacaoAlterarModule' },
+            { path: 'doacao-consultar', loadChildren: './doacao-consultar/doacao-consultar.module#doacaoConsultarModule' },
             { path: 'doacao-efetuar', loadChildren: './doacao-efetuar/doacao-efetuar.module#DoacaoEfetuarModule' },
             { path: 'updateDoadores', loadChildren: './updateDoadores/formUpdate.module#FormModuleUpdate' }
         ]
@@ -307,14 +258,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__layout_component__ = __webpack_require__("./src/app/layout/layout.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_menu_lateral_menu_lateral_component__ = __webpack_require__("./src/app/layout/components/menu-lateral/menu-lateral.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_header_header_component__ = __webpack_require__("./src/app/layout/components/header/header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__doacao_alterar_doacao_alterar_component__ = __webpack_require__("./src/app/layout/doacao-alterar/doacao-alterar.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -334,7 +283,7 @@ var LayoutModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */],
                 __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__["d" /* NgbDropdownModule */].forRoot()
             ],
-            declarations: [__WEBPACK_IMPORTED_MODULE_5__layout_component__["a" /* LayoutComponent */], __WEBPACK_IMPORTED_MODULE_6__components_menu_lateral_menu_lateral_component__["a" /* MenuLateralComponent */], __WEBPACK_IMPORTED_MODULE_7__components_header_header_component__["a" /* HeaderComponent */], __WEBPACK_IMPORTED_MODULE_8__doacao_alterar_doacao_alterar_component__["a" /* DoacaoAlterarComponent */]]
+            declarations: [__WEBPACK_IMPORTED_MODULE_5__layout_component__["a" /* LayoutComponent */], __WEBPACK_IMPORTED_MODULE_6__components_menu_lateral_menu_lateral_component__["a" /* MenuLateralComponent */], __WEBPACK_IMPORTED_MODULE_7__components_header_header_component__["a" /* HeaderComponent */]]
         })
     ], LayoutModule);
     return LayoutModule;
